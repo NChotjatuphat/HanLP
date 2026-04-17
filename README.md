@@ -145,7 +145,7 @@ Native API的输入单位为句子，需使用[多语种分句模型](https://gi
 - 灵活的`tasks`任务调度，任务越少，速度越快，详见[教程](https://mybinder.org/v2/gh/hankcs/HanLP/doc-zh?filepath=plugins%2Fhanlp_demo%2Fhanlp_demo%2Fzh%2Ftutorial.ipynb)。在内存有限的场景下，用户还可以[删除不需要的任务](https://github.com/hankcs/HanLP/blob/master/plugins/hanlp_demo/hanlp_demo/zh/demo_del_tasks.py)达到模型瘦身的效果。
 - 高效的trie树自定义词典，以及强制、合并、校正3种规则，请参考[demo](https://github.com/hankcs/HanLP/blob/doc-zh/plugins/hanlp_demo/hanlp_demo/zh/tok_mtl.ipynb)和[文档](https://hanlp.hankcs.com/docs/api/hanlp/components/tokenizers/transformer.html)。规则系统的效果将无缝应用到后续统计模型，从而快速适应新领域。
 
-#### 单任务模型
+#### 单任务模型.
 
 根据我们的[最新研究](https://aclanthology.org/2021.emnlp-main.451)，多任务学习的优势在于速度和显存，然而精度往往不如单任务模型。所以，HanLP预训练了许多单任务模型并设计了优雅的[流水线模式](https://hanlp.hankcs.com/docs/api/hanlp/components/pipeline.html#hanlp.components.pipeline.Pipeline)将其组装起来。
 
