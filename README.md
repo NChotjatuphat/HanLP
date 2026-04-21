@@ -108,7 +108,7 @@ HanLP := hanlp.HanLPClient(hanlp.WithAuth(""),hanlp.WithLanguage("zh")) // auth�
 HanLPClient HanLP = new HanLPClient("https://www.hanlp.com/api", null, "zh"); // auth不填则匿名，zh中文，mul多语种
 ```
 
-#### 快速上手
+#### 快速上手.
 
 无论何种开发语言，调用`parse`接口，传入一篇文章，得到HanLP精准的分析结果。
 
